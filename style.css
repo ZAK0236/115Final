@@ -4,14 +4,12 @@
 .title{
    font-size: x-large;
    color: white;
-   margin-left: 740px;
-   margin-bottom: 0px;
+   text-align: center;
 }
 .Players{
     font-size: large;
     color: white;
-    margin-left: 740px;
-    margin-top: 0px;
+    text-align: center;
 }
 .ttbox{
     grid-template-columns: 33% 33% 33%;
