@@ -4,6 +4,34 @@
 .title{
    font-size: x-large;
    color: white;
-   margin-left: 800px;
-   position: absolute;
+   margin-left: 740px;
+   justify-content: center;
+}
+.ttbox{
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    display: grid;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.tile{
+border: 3px solid white;
+min-width: 100px;
+min-height: 170px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+cursor: pointer;
+}
+.RB{
+margin-top: 50px;
+margin-left: 900px;
+border: none;
+}
+.reset{
+background-color: white;
+border: none;
+/* padding: 15px 32px; */
+font-size: 16px;
 }
