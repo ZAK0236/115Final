@@ -1,11 +1,11 @@
 *{
-    background-color: #38b6f3;
+    background: linear-gradient(to left, #38b6f3,#800080)
 }
 .title{
    font-size: x-large;
    color: white;
    margin-left: 740px;
-   justify-content: center;
+   margin-bottom: 0px;
 }
 .ttbox{
     grid-template-columns: 33% 33% 33%;
@@ -24,6 +24,14 @@ align-items: center;
 font-size: 50px;
 cursor: pointer;
 }
-.RB{
-padding: 15px 900px;
+.RB button{
+margin-top: 50px;
+margin-left: 880px;
+cursor: pointer;
+}
+#reset{
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
 }
