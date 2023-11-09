@@ -4,8 +4,7 @@
 .title{
    font-size: x-large;
    color: white;
-   margin-left: 740px;
-   margin-bottom: 0px;
+   text-align: center;
 }
 .Players{
     font-size: large;
@@ -47,4 +46,8 @@ cursor: pointer;
     width: 100px;
     height: 40px;
     font-size: 20px;
+}
+.currentplayer{
+    text-align: center;
+    color: white;
 }
