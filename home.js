@@ -59,19 +59,15 @@ function checkWin() {
   }
   return false;
 }
-
 function checkDraw() {
   return gameState.every((cell) => cell !== "");
 }
-
 function resetGame() {
   currentPlayer = "X";
   gameState = ["", "", "", "", "", "", "", "", ""];
   gameActive = true;
   cells.forEach((cell) => (cell.textContent = ""));
 }
-
-
 function keepScore() {
     if (currentPlayer === "X") {
       player1wins++;
@@ -84,8 +80,6 @@ function keepScore() {
       tiesDisplay.textContent = ties;
     }
   }
-
-
   function keepTies() {
     ties++;
     tiesDisplay.textContent = ties;
