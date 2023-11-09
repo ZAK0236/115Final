@@ -71,3 +71,26 @@ window.addEventListener('DOMContentLoaded', () => {
 
       
   });
+
+  function checkDraw() {
+    return gameState.every(cell => cell !== '');
+}
+
+
+
+function endGame(draw) {
+    if (draw) {
+        document.querySelector('.Game').classList.add('draw');
+    } else {
+        document.querySelector('.Game').classList.add('winner');
+    }
+    gameActive = false;
+}
+function restartGame() {
+    gameActive = true;
+    currentPlayer = 'X';
+    gameState = ['', '', '', '', '', '', '', '', ''];
+    document.querySelectorAll('.tile').forEach(cell => cell.textContent = '');
+    document.querySelector('.Game').classList.remove('winner');
+    document.querySelector('.Game').classList.remove('draw');
+}
