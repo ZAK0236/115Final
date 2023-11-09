@@ -58,7 +58,12 @@ function handleCellClick(event) {
     tiles.forEach( (tile, index) => {
         tile.addEventListener('click', () => userAction(tile, index));
     });
-
+function myO() {
+  document.body.style.color = "green";
+}
+function myX() {
+  document.body.style.color = "blue";
+}
 function checkDraw() {
     return gameState.every(cell => cell !== '');
 }
