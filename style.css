@@ -9,8 +9,7 @@
 .Players{
     font-size: large;
     color: white;
-    margin-left: 740px;
-    margin-top: 0px;
+    text-align: center;
 }
 .playerX {
     color: #09C372;
