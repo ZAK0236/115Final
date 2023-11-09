@@ -7,12 +7,6 @@
    margin-left: 740px;
    margin-bottom: 0px;
 }
-.playerX {
-    color: #09C372;
-}
-.playerO {
-    color: #498AFB;
-}
 .ttbox{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
