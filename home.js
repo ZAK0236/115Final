@@ -44,6 +44,7 @@ function handleCellClick(event) {
     endGame(true);
   } else {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+    currentPlayerDisplay.textContent = currentPlayer;
   }
 }
 function checkWin() {
