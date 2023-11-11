@@ -70,7 +70,7 @@ function resetGame() {
   gameActive = true;
   cells.forEach((cell) => (cell.textContent = ""));
 }
-
+console.log(player1wins, player2wins, tiesDisplay);
 
 function keepScore() {
     if (currentPlayer === "X") {
@@ -90,6 +90,15 @@ function keepScore() {
     ties++;
     tiesDisplay.textContent = ties;
   }
+  function endGame(draw) {
+    gameActive = false;
+    if (draw) {
+      keepTies();
+    } else {
+      keepScore();
+    }
+  }
+  
 // function clearBoard() {
 //     cells.forEach(cell => {
 //         cell.textContent = '';
