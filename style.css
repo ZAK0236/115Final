@@ -11,6 +11,13 @@
     color: white;
     text-align: center;
 }
+.playerX {
+    color: #09C372;
+}
+
+.playerO {
+    color: #498AFB;
+}
 .ttbox{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
@@ -38,4 +45,8 @@ cursor: pointer;
     width: 100px;
     height: 40px;
     font-size: 20px;
+}
+.currentplayer{
+    text-align: center;
+    color: white;
 }
