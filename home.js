@@ -97,7 +97,6 @@ gameActive = false;
       keepScore();
     }
   }
-
   function resetButton() {
     resetGame();
     player1win.textContent = 0;
@@ -111,4 +110,10 @@ gameActive = false;
    } else if (currentPlayer === "O") {
      currentPlayer.textContent = "O";
    }
+  }
+  function myX(){
+    document.body.style.color = "blue";
+  }
+  function myO(){
+    document.body.style.color = "blue";
   }
