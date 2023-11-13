@@ -110,9 +110,10 @@ gameActive = false;
    } else if (currentPlayer === "O") {
      currentPlayerDisplay.textContent = "X";
    }
-  function myX(){
-    document.body.style.color = "blue";
-  }
-  function myO(){
-    document.body.style.color = "blue";
-  }
+}
+function myX(){
+  document.body.style.color = "blue";
+}
+function myO(){
+  document.body.style.color = "blue";
+}
