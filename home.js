@@ -3,8 +3,7 @@ const cells = document.querySelectorAll(".tile");
 const player1win = document.querySelector("#player1wins");
 const player2win = document.querySelector("#player2wins");
 const tiesDisplay = document.querySelector("#ties");
-const currentPlayerDisplay = document.querySelector("#currentPlayer");
-
+const currentPlayerDisplay = document.querySelector("#currentplayer");
 let currentPlayer = "X";
 let gameActive = true;
 let gameState = ["", "", "", "", "", "", "", "", ""];
@@ -44,6 +43,7 @@ function handleCellClick(event) {
   } else if (draw) {
     endGame(true);
   } else {
+    currentPlayers()
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     // currentPlayerDisplay.textContent = currentPlayer;
   }
@@ -106,11 +106,10 @@ gameActive = false;
 
   function currentPlayers() {
    if (currentPlayer === "X") {
-     currentPlayer.textContent = "X";
+     currentPlayerDisplay.textContent = "O";
    } else if (currentPlayer === "O") {
-     currentPlayer.textContent = "O";
+     currentPlayerDisplay.textContent = "X";
    }
-  }
   function myX(){
     document.body.style.color = "blue";
   }
