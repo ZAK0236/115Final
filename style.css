@@ -4,8 +4,12 @@
 .title{
    font-size: x-large;
    color: white;
-   margin-left: 740px;
-   margin-bottom: 0px;
+   text-align: center;
+}
+.Players{
+    font-size: large;
+    color: white;
+    text-align: center;
 }
 .playerX {
     color: #09C372;
@@ -13,6 +17,7 @@
 
 .playerO {
     color: #498AFB;
+}
 .ttbox{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
@@ -40,4 +45,8 @@ cursor: pointer;
     width: 100px;
     height: 40px;
     font-size: 20px;
+}
+.currentplayer{
+    text-align: center;
+    color: white;
 }
