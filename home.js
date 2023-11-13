@@ -96,6 +96,5 @@ gameActive = false;
     document.body.style.color = "blue";
   }
   function myO(){
-    document.body.style.color = "green";
+    document.body.style.color = "blue";
   }
-  
