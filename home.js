@@ -92,4 +92,10 @@ gameActive = false;
       keepScore();
     }
   }
+  function myX(){
+    document.body.style.color = "blue";
+  }
+  function myO(){
+    document.body.style.color = "blue";
+  }
   
