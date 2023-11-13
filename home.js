@@ -3,7 +3,7 @@ const cells = document.querySelectorAll(".tile");
 const player1win = document.querySelector("#player1wins");
 const player2win = document.querySelector("#player2wins");
 const tiesDisplay = document.querySelector("#ties");
-const header = document.createElement("h2")
+const currentPlayerDisplay = document.querySelector("#currentPlayer");
 
 let currentPlayer = "X";
 let gameActive = true;
@@ -45,6 +45,7 @@ function handleCellClick(event) {
     endGame(true);
   } else {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+    // currentPlayerDisplay.textContent = currentPlayer;
   }
 }
 function checkWin() {
@@ -60,43 +61,54 @@ function checkWin() {
   }
   return false;
 }
-
-header.innerHTML = "Player X's Turn"
-document.body.appendChild(header)
-
 function checkDraw() {
   return gameState.every((cell) => cell !== "");
 }
-
 function resetGame() {
   currentPlayer = "X";
   gameState = ["", "", "", "", "", "", "", "", ""];
   gameActive = true;
   cells.forEach((cell) => (cell.textContent = ""));
 }
-console.log(player1wins, player2wins, tiesDisplay);
 
 function keepScore() {
   if (currentPlayer === "X") {
     let score = parseInt(player1win.textContent);
     player1win.textContent = score + 1;
+    resetGame();
   } else if (currentPlayer === "O") {
     let score = parseInt(player2win.textContent);
     player2win.textContent = score + 1;
+    resetGame();
   }
 }
-
 
   function keepTies() {
     let score = parseInt(tiesDisplay.textContent);
     tiesDisplay.textContent = score + 1
+    resetGame();
   }
-  
-  function endGame(draw) {
-    gameActive = false;
+
+function endGame(draw) {
+gameActive = false;
     if (draw) {
       keepTies();
     } else {
       keepScore();
     }
+  }
+
+  function resetButton() {
+    resetGame();
+    player1win.textContent = 0;
+    player2win.textContent = 0;
+    tiesDisplay.textContent = 0;
+  }
+
+  function currentPlayers() {
+   if (currentPlayer === "X") {
+     currentPlayer.textContent = "X";
+   } else if (currentPlayer === "O") {
+     currentPlayer.textContent = "O";
+   }
   }
