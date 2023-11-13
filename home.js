@@ -61,18 +61,15 @@ function checkWin() {
   }
   return false;
 }
-
 function checkDraw() {
   return gameState.every((cell) => cell !== "");
 }
-
 function resetGame() {
   currentPlayer = "X";
   gameState = ["", "", "", "", "", "", "", "", ""];
   gameActive = true;
   cells.forEach((cell) => (cell.textContent = ""));
 }
-console.log(player1wins, player2wins, tiesDisplay);
 
 function keepScore() {
   if (currentPlayer === "X") {
@@ -86,15 +83,14 @@ function keepScore() {
   }
 }
 
-
   function keepTies() {
     let score = parseInt(tiesDisplay.textContent);
     tiesDisplay.textContent = score + 1
     resetGame();
   }
-  
-  function endGame(draw) {
-    gameActive = false;
+
+function endGame(draw) {
+gameActive = false;
     if (draw) {
       keepTies();
     } else {
