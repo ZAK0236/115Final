@@ -9,7 +9,7 @@
 .Players{
     font-size: large;
     color: white;
-    text-align: center;
+    text-align: right;
 }
 .ttbox{
     grid-template-columns: 33% 33% 33%;
@@ -17,6 +17,7 @@
     display: grid;
     max-width: 500px;
     margin: 0 auto;
+    margin-top: -450px;
 }
 .tile{
 border: 3px solid white;
