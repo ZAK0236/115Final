@@ -4,7 +4,6 @@ const player1win = document.querySelector("#player1wins");
 const player2win = document.querySelector("#player2wins");
 const tiesDisplay = document.querySelector("#ties");
 const currentPlayerDisplay = document.querySelector("#currentplayer");
-
 let currentPlayer = "X";
 let gameActive = true;
 let gameState = ["", "", "", "", "", "", "", "", ""];
@@ -98,7 +97,6 @@ gameActive = false;
       keepScore();
     }
   }
-
   function resetButton() {
     resetGame();
     player1win.textContent = 0;
@@ -112,4 +110,9 @@ gameActive = false;
    } else if (currentPlayer === "O") {
      currentPlayerDisplay.textContent = "X";
    }
+  function myX(){
+    document.body.style.color = "blue";
+  }
+  function myO(){
+    document.body.style.color = "blue";
   }

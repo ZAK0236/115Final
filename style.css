@@ -5,18 +5,11 @@
    font-size: x-large;
    color: white;
    text-align: center;
-}
+
 .Players{
     font-size: large;
     color: white;
-    text-align: center;
-}
-.playerX {
-    color: #09C372;
-}
-
-.playerO {
-    color: #498AFB;
+    text-align: right;
 }
 .ttbox{
     grid-template-columns: 33% 33% 33%;
@@ -24,6 +17,7 @@
     display: grid;
     max-width: 500px;
     margin: 0 auto;
+    margin-top: -450px;
 }
 .tile{
 border: 3px solid white;
@@ -49,4 +43,5 @@ cursor: pointer;
 .currentplayer{
     text-align: center;
     color: white;
+/*     padding-bottom: 20px; */
 }
