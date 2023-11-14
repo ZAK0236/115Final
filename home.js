@@ -115,5 +115,5 @@ function myX(){
   document.body.style.color = "blue";
 }
 function myO(){
-  document.body.style.color = "blue";
+  document.body.style.color = "green";
 }
